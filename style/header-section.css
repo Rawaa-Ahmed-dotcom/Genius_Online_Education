@@ -1,0 +1,84 @@
+.header-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        font-family: "IBM Plex Sans Arabic";
+}
+.header-section-text {
+        width: 32em;
+}
+.header-section .header-section-text h4 {
+        position: relative;
+        margin-right: 3em;
+        color: var(--primary-color);
+        font-weight: 400;
+        font-size: 1.125em;
+        margin-bottom: 1em;
+        font-family: "IBM Plex Sans Arabic";
+}
+.header-section .header-section-text h4::before {
+        content: "";
+        position: absolute;
+        width: 2.75em;
+        height: 1px;
+        background-color: var(--primary-color);
+        bottom: 0;
+        right: -3em;
+        top: 50%;
+        transform: traslatey(-50%);
+}
+.header-section .header-section-text h2 {
+        font-weight: 700;
+        font-size: 2.5em;
+        color: var(--primary-color);
+        line-height: 1.4em;
+        font-family: "IBM Plex Sans Arabic";
+}
+.header-section .header-section-text h2 span {
+        color: var(--yellow-color);
+}
+.header-section .header-section-icons {
+        width: 7em;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6em;
+}
+.header-section .header-section-icons .header-section-icon {
+        width:3em;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: transparent;
+        
+        padding: 0.8125em 0.875em;
+        
+}
+.header-section .header-section-icons .header-section-icon.active {
+        color: #818181;
+        border: 1px solid #818181;
+        cursor: pointer;
+        transition: 0.3s;
+}
+.header-section .header-section-icons .header-section-icon.active:hover {
+        background-color: var(--primary-color);
+        border: none;
+}
+.header-section .header-section-icons .header-section-icon:not(.active) {
+        color: #EBEBEB;
+        border: 1px solid #EBEBEB;
+        
+}
+@media(max-width: 767px){
+        .header-section{
+                flex-direction: column;
+                align-items: flex-start;
+        }
+        .header-section .header-section-icons {
+                margin-top: 1.5em;
+        }
+}

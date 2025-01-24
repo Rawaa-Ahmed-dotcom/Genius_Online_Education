@@ -1,0 +1,357 @@
+@import "./navbar.css";
+@import "./topbar.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./ads-banner.css";
+@import "./header-section.css";
+@import "./hero-banner.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0;
+}
+
+.hero-banner {
+    margin-bottom: 4em;
+    
+}
+.hero-banner .special {
+padding-left: 0;
+display: flex;
+align-items: flex-end !important;
+justify-content: space-between;
+gap: 1em;
+flex-wrap: wrap;
+position: relative;
+
+}
+.hero-banner .special  > .icon:not(.active) {
+    display: none;
+}
+.hero-banner .special  > .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #818181;
+    font-size: 2em;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 1.5em;
+    border: 2px solid #dedcdc;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+.hero-banner .special .hero-banner-container-description {
+flex: 1;
+}
+
+.hero-banner .special .hero-banner-container-description .hero-banner-container-description-text h1 {
+color: var(--primary-color);
+font-family: "IBM Plex Sans Arabic";
+}
+.hero-banner .special .hero-banner-container-description .hero-banner-container-description-text h1 span {
+    color: var(--yellow-color) !important;
+}
+.hero-banner .special .hero-banner-container-description .hero-banner-container-description-text p {
+max-width: 31em;
+font-family: "IBM Plex Sans Arabic";
+}
+.hero-banner .special .hero-banner-container-description .hero-banner-container-description-btns a {
+    font-family: "IBM Plex Sans Arabic";
+}
+.hero-banner .special .hero-banner-container-image {
+display: flex;
+height: 16.6em;
+flex: 1;
+
+gap: 1em;
+padding-left: 0;
+}
+.hero-banner .special .hero-banner-container-image .image {
+    width: calc(100% / 2.5);
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+.hero-banner .special .hero-banner-container-image .image:last-child {
+    width: calc(100% / 5 );
+
+}
+.hero-banner .special .hero-banner-container-image .image img {
+    
+    
+    object-fit: contain;
+    position: absolute;
+    bottom: 0em;
+    height: 19.25em;
+    
+}
+.hero-banner .special .hero-banner-container-image .primary {
+    background-color: #12376B40;
+}
+.hero-banner .special .hero-banner-container-image .red {
+    background-color: #F04B2540;
+}
+.hero-banner .special .hero-banner-container-image .blue {
+    background-color: #286CD540;
+    padding: 0;
+    justify-content: flex-end !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    
+    
+}
+.hero-banner .special .hero-banner-container-image .blue img {
+
+    left: 0em !important;
+    width: 6.8em;
+    bottom: 0em;
+    height: 19.25em;
+    object-fit: contain;
+}
+@media (max-width: 1024px )  {
+    .hero-banner .special {
+        
+        padding-inline: 1.22em;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        
+    }
+    .hero-banner .special .hero-banner-container-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .hero-banner .special .hero-banner-container-image  {
+        
+        width: 100%;
+        justify-content: center; 
+        margin-top: 3em;
+        
+    }
+
+    
+    
+    .hero-banner .special .hero-banner-container-image  .image {
+        height: 17em;
+        
+    }
+    
+} 
+
+@media(max-width:767px) {
+    .hero-banner .special .hero-banner-container-image .image {
+        width: calc( 100% / 2);
+        
+        
+    }
+    .hero-banner .special .hero-banner-container-image .image:last-child {
+        width: calc(100% / 4.8);
+        
+    }
+    
+}
+@media(max-width:440px) {
+    .hero-banner .special .hero-banner-container-image {
+        width: 100% !important;
+        padding-inline: 1.22em !important;
+    }
+    .hero-banner .special .hero-banner-container-image .image {
+        flex: 1;
+        margin-block: 1em;
+        
+        
+    }
+    .hero-banner .special .hero-banner-container-image .image:last-child {
+        display: none;
+        
+    }
+} 
+
+.instructors  {
+    margin-bottom: 5em;
+    
+}
+.instructors .container .instructors-info {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+    margin-bottom: 8.43em;
+    margin-top: 4em;
+}
+.instructors .container .instructors-info .scroll {
+    flex: 1.5;
+    max-height: 51em;
+    overflow-y: auto;
+    
+    
+}
+
+
+    
+.instructors .container .instructors-info .scroll .card {
+    background-color: var(--secondary-color);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.instructors .container .instructors-info .scroll  .card .card-image {
+    background-color: #12376B40;
+    
+    display: flex;
+    justify-content: center;
+    height: 13em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.instructors .container .instructors-info .scroll  .card .card-image img {
+        width: 100%;
+        height: 14.5em; 
+        object-fit: contain;
+        transform: translatey(-1.5em);
+}
+.instructors .container .instructors-info .scroll  .card .card-text {
+    margin: 1.8em 1.43em 1.68em 1.625em;
+    
+    
+}
+.instructors .container .instructors-info .scroll  .card .card-text h2 {
+    font-weight: 700;
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 0.4em;
+}
+.instructors .container .instructors-info .scroll  .card .card-text p {
+        font-family: "IBM Plex Sans Arabic";
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.6;
+        color: var(--gray-color-card-text);
+}
+.instructors .container .instructors-info .scroll  .card:nth-child(2) .card-image {
+        background-color: #F04B2540;
+}
+    
+.instructors .container .instructors-info .scroll  .card:nth-child(2) .card-text h2 {
+        color: var(--orange-color);
+    
+}
+.instructors .container .instructors-info .scroll  .card:nth-child(3) .card-image {
+        background-color: #286CD540;
+}
+.instructors .container .instructors-info .scroll  .card:nth-child(3) .card-text h2 {
+        color: var(--blue-color);
+}
+.instructors .container .instructors-info .scroll  .card:nth-child(4) .card-image {
+        background-color: #F4A90540;
+}
+.instructors .container .instructors-info .scroll  .card:nth-child(4) .card-text h2 {
+        color: var(--yellow-color);
+}
+.instructors .container .instructors-info  .box-info {
+    flex: 3;
+    display: flex;
+    gap: 0;
+    
+    margin-block: 3em;
+
+    height: 25em;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+   
+}
+.instructors .container .instructors-info  .box-info .image {
+border-radius: 10px;
+flex: 2;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+
+}
+.instructors .container .instructors-info  .box-info .image img {
+width: 100%;
+height: 100%;
+
+object-fit: contain;
+}
+.instructors .container .instructors-info  .box-info .text {
+    padding-block: 3em;
+    flex: 2;
+    padding-inline: 2.5em;
+}
+.instructors .container .instructors-info  .box-info .text h2 {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 700;
+font-size: 2em;
+color: var(--primary-color);
+margin-bottom: 0.7em;
+}
+.instructors .container .instructors-info  .box-info .text span {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--gray-color-card-text);
+    
+}
+.instructors .container .instructors-info  .box-info .text p {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #909090;
+    line-height: 1.6;
+    margin-top: 1.3em;
+    
+}
+.instructors .container .instructors-info  .scroll .card:last-child {
+    position: relative !important;
+    z-index: 1;
+
+}
+.instructors .container .instructors-info  .scroll .card:last-child:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #FFFFFF 40.8%, #FFFFFF 70.63%, rgba(255, 255, 255, 0) 99.43%);
+    z-index: 300;
+}
+@media (max-width: 767px) {
+    .instructors .container .instructors-info  {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .instructors .container .instructors-info  .box-info {
+        flex-direction: column;
+        width: 100% !important;
+        
+
+    }
+    .instructors .container .instructors-info .box-info {
+        min-height: 25em;
+    }
+    .instructors .container .instructors-info .scroll {
+        width: 70% !important; 
+        overflow-y: scroll;
+    }
+    .instructors .container .instructors-info {
+        flex-direction: column;
+
+    }
+}

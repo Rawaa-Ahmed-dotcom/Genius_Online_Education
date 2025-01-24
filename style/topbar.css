@@ -1,0 +1,32 @@
+
+* {
+    font-family: "Arabic-ui";
+}
+header .top-bar {
+    height: 2.75em;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625em;
+    color: var(--white-color);
+    width: 100%;
+}
+header .top-bar p {
+    font-weight: 300;
+    font-size: 1em;
+    
+}
+header .top-bar p  span {
+font-weight: 700;
+
+}
+@media (max-width: 440px){
+    header .top-bar p {
+        font-size: 0.8em;
+    }
+    header .top-bar {
+        padding-inline: 0.1em;
+        gap: 0.3em;
+    }
+}

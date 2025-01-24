@@ -1,0 +1,142 @@
+@import "./header.css";
+@import "./hero-banner.css";
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+.contact .container .header {
+margin-block: 4em;
+}
+.contact .container .header h1 {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 700;
+font-size: 5em;
+
+}
+.contact .container .header h1 .primary {
+color: var(--primary-color);
+}
+.contact .container .header h1 .red {
+color: #F04A26;
+}
+.contact .container .content {
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+
+}
+.contact .container .content .form  {
+    flex: 1.5;
+}
+.contact .container .content .form form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+
+}
+.contact .container .content .form .full-name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+
+
+}
+.contact .container .content .form .full-name > div{
+    width: 48%;
+}
+.contact .container .content .form .full-name > div input {
+    width: 100%;
+}
+.contact .container .content .form input,textarea {
+    padding-inline: 1.5em;
+    padding-block: 0.7em;
+    width:100%;
+    border-radius: 6px;
+    border: 1px solid #8A8A8A;
+    outline: none;
+}
+.contact .container .content .form textarea {
+    min-height: 12.75em;
+    resize: none;
+}
+.contact .container .content .form input::placeholder,textarea::placeholder {
+    color: #BFBFBF;
+    font-weight: 700;
+    font-size: 1.25em;
+    font-family: "IBM Plex Sans Arabic";
+}
+.contact .container .content .form input[type="submit"] {
+    background-color: #F04B25;
+    color: white;
+    font-family: "Alexandria";
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+    
+}
+.contact .container .content .contact-info {
+    flex: 1.3;
+    padding-right: 1em;
+}
+.contact .container .content .contact-info .header-text {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 2em;
+    color: #818181;
+    margin-bottom: 1.2em;
+}
+.contact .container .content .contact-info .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 2em;
+
+}
+.contact .container .content .contact-info .contact  li {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #818181;
+}
+.contact .container .content .contact-info .contact  li i {
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: 900;
+}
+.contact .container .content .contact-info .social {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    color: #818181;
+}
+.contact .container .content .contact-info .social i {
+    font-weight: 400;
+    font-size: 1.25em;
+
+}
+
+.contact .container .content .contact-info  iframe {
+    border-radius: 10px;
+    min-height: 14em;
+    margin-top: 2em;
+    
+}
+@media(max-width: 767px) {
+    .contact .container .content {
+        flex-direction: column;
+
+    }
+    .contact .container .content .contact-info {
+        justify-content: center !important;
+        width: 100%;
+        text-align: center;
+        align-items: center !important;
+    }
+    .contact .container .content .contact-info .social {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,110 @@
+* {
+    font-family: "Arabic-ui";
+}
+
+.nav-bar {
+margin-top: 2.875em;
+
+
+}
+header .nav-bar .container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 6.68em;
+height: 2.81em;
+}
+header .nav-bar .container .nav-bar-container-icon {
+    display: none;
+}
+header .nav-bar .container .nav-bar-container-btns {
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1.5em;
+}
+header .nav-bar .container .nav-bar-container-btns i {
+color: var(--primary-color);
+font-size: 1.75em;
+cursor: pointer;
+}
+
+header .nav-bar .container .nav-bar-container-btns a.btn-1 {
+border-radius: 2em;
+padding: 0.5em 1.5em;
+
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+font-size: 1em;
+color: var(--white-color);
+background-color: var(--orange-color);
+}
+header .nav-bar .container .nav-bar-container-btns a.btn-2 {
+
+font-weight: 700;
+font-size: 1em;
+color: var(--orange-color);
+display: flex;
+align-items: center;
+justify-content: cenetr;
+}
+header .nav-bar .container .nav-bar-container-links {
+
+height: 1em;
+color: var(--primary-color);
+display: flex;
+align-items: center;
+gap: 3.6em;
+}
+header .nav-bar .container .nav-bar-container-links a {
+font-weight: 700;
+font-size: 1em;
+position: relative;
+
+}
+header .nav-bar .container .nav-bar-container-links a::after {
+content: "";
+position: absolute;
+width: 0;
+height: 2px;
+left: 0;
+
+background-color: var(--primary-color);
+bottom: -5px;
+border-radius: 2px;
+transition: 0.3s;
+}
+header .nav-bar .container .nav-bar-container-links a:hover::after {
+    width: 100%;
+}
+header .nav-bar .container .nav-bar-container-logo {
+width: 10em;
+height: 4em;
+}
+header .nav-bar .container .nav-bar-container-logo a img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+@media (max-width: 767px) {
+    header .nav-bar .container .nav-bar-container-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    header .nav-bar .container .nav-bar-container-icon i {
+        width: 5em;
+        color: var(--gray-color);
+        cursor: pointer;
+    }
+    header .nav-bar .container .nav-bar-container-btns {
+        display: none;
+    }
+    header .nav-bar .container .nav-bar-container-links {
+        display: none;
+    }
+}

@@ -1,0 +1,866 @@
+@import "./navbar.css";
+@import "./topbar.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./ads-banner.css";
+@import "./header-section.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+
+}
+.course-info {
+margin-block: 6em;
+}
+.course-info  {
+    position: relative;
+}
+.course-info .course-info-container {
+display: flex;
+gap: 1.3em;
+flex-wrap: wrap;
+align-items: flex-start;
+}
+.course-info .course-info-container .course-short-info {
+background-color: var(--secondary-color);
+border-radius: 10px;
+flex: 1;
+}
+.course-info .course-info-container .course-short-info .course-main-heading {
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+background-color: #F4A905;
+text-align: center;
+padding-block: 1em;
+padding-inline: 1em;
+margin-bottom: 2em;
+}
+.course-info .course-info-container .course-short-info .course-main-heading p {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1.125em;
+    color: var(--white-color);
+}
+.course-info .course-info-container .course-short-info .course-content {
+padding-inline: 2em;
+}
+.course-info .course-info-container .course-short-info .course-content > h2 {
+text-align: center;
+font-family: "IBM Plex Sans Arabic";
+font-weight: 700;
+font-size: 2.5em;
+color: var(--primary-color);
+margin-bottom: 1em;
+}
+.course-info .course-info-container .course-short-info .course-content h2 span {
+color: var(--yellow-color);
+}
+.course-info .course-info-container .course-short-info .course-content .course-image img {
+border-radius: 5px;
+width: 100%;
+object-fit: contain;
+}
+.course-info .course-info-container .course-short-info .course-content .course-price {
+background-color: #F5A805;
+display: flex;
+align-items: center;
+border-radius: 5px;
+padding-inline: 1em;
+padding-block: 1em;
+gap: 1em;
+margin-top: 1.625em;
+}
+
+.course-info .course-info-container .course-short-info .course-content .course-price .price h2 {
+    color: var(--white-color);
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 0;
+}
+.course-info .course-info-container .course-short-info .course-content .course-price .price span {
+    color: var(--white-color);
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 300;
+    font-size: 1.25em;
+
+}
+
+.course-info .course-info-container .course-short-info .course-content .course-price .info-price p{
+font-family: "IBM Plex Sans Arabic";
+font-weight: 400;
+font-size: 0.9em;
+color: #9B6900;
+
+}
+.course-info .course-info-container .course-short-info .course-content .course-price .info-price p:not(:last-child) {
+    border-bottom: 1px solid #AB7400;
+    padding-bottom: 0.5em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-price .info-price p:last-child {
+    padding-top: 0.5em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-details {
+padding-top: 1.5em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-details > p{
+font-family: "IBM Plex Sans Arabic";
+font-weight: 400;
+font-size: 0.9em;
+color: #909090;
+position: relative;
+padding-right: 2em;
+margin-bottom: 1.4em;
+
+}
+.course-info .course-info-container .course-short-info .course-content .course-details > p span {
+    font-weight: 600;
+    
+}
+.course-info .course-info-container .course-short-info .course-content .course-details > p i {
+position: absolute;
+border-radius: 50%;
+border: 1px solid #909090;
+width: 1.75em;
+height: 1.75em;
+display: flex;
+justify-content: center;
+align-items: center;
+top: -1.2em;
+margin-right: -2.3em;
+
+}
+.course-info .course-info-container .course-short-info .course-content .course-details .course-requirements {
+display: flex;
+padding-bottom: 1em;
+border-bottom: 1px solid #B3B3B3;
+margin-bottom: 1em;
+}
+
+.course-info .course-info-container .course-short-info .course-content .course-details .course-requirements .icon i {
+color: #616161;
+margin: 0;
+}
+.course-info .course-info-container .course-short-info .course-content .course-details .course-requirements .list-one:not(:last-child) {
+padding-left: 1em;
+border-left: 1px solid #B3B3B3;
+}
+.course-info .course-info-container .course-short-info .course-content .course-details .course-requirements .list-one:not(:first-child) {
+    padding-right: 1em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-details .course-requirements .list-one p {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #909090;
+}
+.course-info .course-info-container .course-short-info .course-content .course-details .course-requirements .list-one p:not(:last-child) {
+    margin-bottom: 0.4em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-details .course-requirements .list-one p span {
+    font-weight: 600;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating {
+margin-block: 1.5em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating p {
+margin-bottom: 1em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating p {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 400;
+font-size: 0.95em;
+color: #909090;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating p i {
+    margin-left: 1em;
+    font-size: 1em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating p span:last-of-type {
+font-weight: 300;
+font-size: 1em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating p:first-child span:first-of-type {
+    font-weight: 700;
+    font-size: 1em;
+    color: #F5A805;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating p:first-child i {
+    color: #F5A805;
+}
+
+.course-info .course-info-container .course-short-info .course-content .course-rating p:nth-child(2) span:first-of-type {
+    font-weight: 700;
+    font-size: 1em;
+    color: #00B912;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating p:nth-child(2) i {
+    color: #00B912;
+}
+
+.course-info .course-info-container .course-short-info .course-content .course-rating p:nth-child(4) span {
+font-weight: 700;
+font-size: 1em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-rating p:nth-child(5) span {
+    font-weight: 700;
+    font-size: 1em;
+} 
+.course-info .course-info-container .course-short-info .course-content .course-subscribe {
+display: flex;
+flex-direction: column;
+gap: 0.8em;
+justify-content: center;
+align-items: center;
+margin-bottom: 1.5em;
+}
+.course-info .course-info-container .course-short-info .course-content .course-subscribe .btn-one {
+    background-color: var(--yellow-color);
+    color: var(--primary-color);
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    border: none;
+    outline: none;
+    border-radius: 67px;
+    width: 85%;
+    font-weight: 700;
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 1.5em;
+
+
+
+}
+.course-info .course-info-container .course-short-info .course-content .course-subscribe .btn-two {
+    border: 1px solid #616161;
+    border-radius: 67px;
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #9A9A9A;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    width: 85%;
+}
+.course-info .course-info-container .course-short-info .course-content .course-options {
+display: flex;
+align-items: center;
+gap: 2.6em;
+justify-content: center;
+
+}
+.course-info .course-info-container .course-short-info .course-content .course-options .fav {
+display: flex;
+gap: 0.5em;
+align-items: center;
+color: #909090;
+font-family: "IBM Plex Sans Arabic";
+font-size: 1em;
+padding-bottom: 1.5em;
+}
+
+.course-info .course-info-container .course-short-info .course-content .course-options .fav p {
+    font-weight: 400;
+}
+.course-info .course-info-container .course-long-info {
+    flex: 1.5;
+}
+.course-info .course-info-container .course-long-info .image {
+width: 43em;
+height: 21em;
+position: relative;
+
+}
+
+.course-info .course-info-container .course-long-info .image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .image::before {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #F5A80526;
+top: 0;
+left: 0;
+}
+.course-info .course-info-container .course-long-info .image  i {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #686868;
+font-size: 3.5em;
+}
+@media (max-width: 881px) {
+    .course-info .course-info-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .course-info .course-info-container .course-long-info,
+    .course-info .course-info-container .course-short-info{
+        width: 100%;
+        
+    }
+    .course-info .course-info-container .course-long-info .image {
+        width: 100%;
+        
+        
+    }
+
+}
+.course-info .course-info-container .course-long-info .header-section {
+    margin-top: 2em;
+    display: block;
+    width: 32em;
+}
+.course-info .course-info-container .course-long-info .header-section p {
+    color: #909090;
+    font-weight: 400;
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 1.25em;
+    margin-top: 1em;
+    min-width: 100px;
+}
+.course-info .course-info-container .course-long-info .about {
+margin-top: 2.5em;
+}
+.course-info .course-info-container .course-long-info .about .main-heading {
+background-color: var(--yellow-color);
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+color: white;
+padding-block: 1.1em;
+padding-right: 1.75em;
+
+}
+.course-info .course-info-container .course-long-info .about .main-heading h3 {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1.25em;
+}
+.course-info .course-info-container .course-long-info .about .about-content {
+    background: linear-gradient(360deg, #F5F5F5 -1.73%, rgba(245, 245, 245, 0) 35.73%);
+    padding-block: 1.75em;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.course-info .course-info-container .course-long-info .about .about-content ul {
+display: flex;
+flex-direction: column;
+gap: 1.3em;
+padding-right: 2.4em;
+
+}
+.course-info .course-info-container .course-long-info .about  .about-content ul li {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 400;
+color: #909090;
+position: relative;
+line-height: 1.6;
+
+
+}
+.course-info .course-info-container .course-long-info .about  .about-content ul li span {
+    font-weight: 700;
+}
+.course-info .course-info-container .course-long-info .about  .about-content ul li i {
+color: var(--yellow-color);
+font-size: 1.3em;
+right: -1.5em;
+position: absolute;
+
+}
+.course-info .course-info-container .course-long-info .more {
+margin-top: 2em;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.course-info .course-info-container .course-long-info .more button {
+background-color: #D9D9D9;
+border-radius: 100px;
+color: #909090;
+font-weight: 600;
+font-family: "IBM Plex Sans Arabic";
+font-size: 1em;
+border: none;
+padding-inline: 1.5em;
+padding-block: 0.75em;
+}
+.course-info .course-info-container .course-long-info .diploma-content {
+background-color: #F5F5F5;
+
+margin-top: 2em;
+}
+.course-info .course-info-container .course-long-info .diploma-content > .main-heading {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #D7D7D7;
+padding-inline: 1.7em;
+padding-block: 1em;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-content > .main-heading .main-heading-text  h3 {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1.25em;
+    color: #686868;
+
+}
+
+.course-info .course-info-container .course-long-info .diploma-content > .main-heading .main-heading-icon i {
+color: #818181;
+background-color: transparent;
+width: 1.75em;
+height: 1.75em;
+border-radius: 50%;
+border: 1px solid #818181;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items {
+display: flex;
+flex-direction: column;
+gap: 2em;
+padding-block: 1.5em;
+padding-inline: 2em;
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item {
+    background-color: #EAEAEA;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item .main-heading {
+background-color: #D8D8D8;
+border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-block: 1em;
+padding-inline: 1.5em;
+}
+
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item .main-heading .main-heading-text h3 {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 600;
+font-size: 1.1em;
+color: #818181;
+
+}
+
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item .main-heading .main-heading-icon i {
+    color: #818181;
+    background-color: transparent;
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    border: 1px solid #818181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item .item-content {
+    padding-block: 1.5em;
+    padding-inline: 1.5em;
+
+
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item .item-content ul {
+display: flex;
+flex-direction: column;
+gap: 1em;
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item .item-content ul li {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 400;
+font-size: 1em;
+color: #909090;
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item .item-content ul li i {
+    color: #616161;
+    margin-left: 1em;
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item:not(.active) .item-content{
+    display: none;
+
+}
+.course-info .course-info-container .course-long-info .diploma-content .diploma-items  .item:first-child .main-heading {
+    background-color: #EAEAEA;
+    
+}
+.course-info .course-info-container .course-long-info .diploma-features {
+margin-block: 4em;
+}
+.course-info .course-info-container .course-long-info .diploma-features .main-heading {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+background-color: #D7D7D7;
+position: relative;
+padding-inline: 1.5em;
+padding-block: 1em;
+}
+.course-info .course-info-container .course-long-info .diploma-features .main-heading > img {
+position: absolute;
+top: -1em;
+right: -0.5em;
+
+}
+.course-info .course-info-container .course-long-info .diploma-features .main-heading .text-heading h3 {
+
+font-family: "IBM Plex Sans Arabic";
+font-weight: 700;
+font-size: 1.25em;
+color: #686868;
+}
+.course-info .course-info-container .course-long-info .diploma-features .main-heading .icon-heading i {
+color: #818181;
+width: 2em;
+height: 2em;
+border-radius: 50%;
+border: 1px solid #818181;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content {
+background-color: #F5F5F5;
+padding-inline: 2em;
+padding-block: 2em;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item {
+display: flex;
+margin-bottom: 2.5em;
+height: 14em;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item .image {
+width: 12em;
+height: 100%;
+flex: 2;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item .image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 0;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item .info {
+padding-inline: 2em;
+color: white;
+padding-block: 2em;
+flex: 3;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:first-child .info {
+    background-color: var(--primary-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:first-child .image img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(5) .image img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(3) .image img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(2) .info{
+    background-color: #F04B25;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(2) .image  img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(4) .image  img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(6) .image  img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(3) .info {
+    background-color: var(--blue-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(4) .info {
+    background-color: var(--yellow-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(5) .info {
+    background-color: var(--primary-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item:nth-child(6) .info {
+    background-color: #F04B25;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item .info h3 {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 700;
+font-size: 1.5em;
+margin-bottom: 0.5em;
+}
+.course-info .course-info-container .course-long-info .diploma-features .features-content .item .info p {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1em;
+}
+.course-info  .course-long-info .diploma-benefits .main-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D7D7D7;
+    padding-inline: 2em;
+    padding-block: 1.5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.course-info  .course-long-info .diploma-benefits .text-heading h3 {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 700;
+font-size: 1.25em;
+color: #686868;
+}
+
+.course-info  .course-long-info .diploma-benefits  .icon-heading i {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1px solid #818181;
+    color: #818181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course-info  .course-long-info .diploma-benefits .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(18.75em,1fr));
+    gap: 1.5em;
+    padding-inline: 2em;
+    padding-block: 2em;
+    background-color: #F5F5F5;
+}
+.course-info  .course-long-info .diploma-benefits .items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-inline: 2em;
+    padding-block: 2em;
+    border-radius: 10px;
+    color: white;
+}
+.course-info  .course-long-info .diploma-benefits .items .item h2 {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 700;
+font-size: 1.25em;
+margin-bottom: 0.5em;
+margin-top: 0.5em;
+}
+.course-info  .course-long-info .diploma-benefits .items .item p {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 0.75em;
+}
+.course-info  .course-long-info .diploma-benefits .items  .red {
+    background-color: #F04A26;
+}
+.course-info  .course-long-info .diploma-benefits .items  .blue {
+    background-color: var(--blue-color);
+}
+.course-info  .course-long-info .diploma-benefits .items  .primary {
+    background-color: var(--primary-color);
+}
+.course-info  .course-long-info .diploma-benefits .items  .yellow {
+    background-color: var(--yellow-color);
+}
+.course-info {
+    position: relative;
+}
+
+
+
+.teachers {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    margin-bottom: 8.43em;
+}
+.teachers .container {
+    width: 70%;
+}
+.teachers  .special {
+    width: 60%;
+    padding-left: 0 !important;
+    margin-top: 4em;
+}
+
+.teachers .header-section .header-section-text {
+    width: fit-content;
+}
+.teachers .special {
+    padding-left: 0 !important;
+}
+.teachers .header-section .header-section-icons {
+    width: fit-content;
+}
+.teachers .teachers-content {
+    display: flex !important;
+    gap: 1.5em;
+}
+.teachers .teachers-content .card {
+    background-color: var(--secondary-color);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.teachers .teachers-content .card:first-child,
+.teachers .teachers-content .card:nth-child(2) {
+    width: calc(100% / 2.5);
+}
+.teachers .teachers-content .card:last-child {
+    width: calc(100% / 5);
+}
+.teachers .teachers-content .card .card-image {
+    position: relative;
+    background-color: #12376B40;
+
+display: flex;
+justify-content: center;
+height: 13em;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+.teachers .teachers-content .card .card-text {
+    margin: 1.8em 1.43em 1.68em 1.625em;
+}
+.teachers .teachers-content .card .card-text h2 {
+    font-weight: 700;
+font-family: "IBM Plex Sans Arabic";
+font-size: 1.6em;
+color: var(--primary-color);
+margin-bottom: 0.4em;
+}
+.teachers .teachers-content .card .card-text p {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--gray-color-card-text);
+}
+.teachers  .teachers-content .card:nth-child(2) .card-image {
+    background-color: #F04B2540;
+}
+
+.teachers  .teachers-content .card:nth-child(2) .card-text h2 {
+    color: var(--orange-color);
+}
+.teachers  .teachers-content .card:nth-child(3) .card-image {
+    background-color: #286CD540;
+}
+.teachers  .teachers-content .card:nth-child(3) .card-text h2 {
+    color: var(--blue-color);
+}
+.teachers .teachers-content .card:nth-child(4) .card-image {
+    background-color: #F4A90540;
+}
+.teachers  .teachers-content .card:nth-child(4) .card-text h2 {
+    color: var(--yellow-color);
+}
+.teachers .teachers-content .card  img {
+    position: absolute;
+    height: 16em;
+    bottom: 0 !important;
+    width: 100%;
+    object-fit: contain;
+    transform: translatey(0);
+    
+}
+.teachers .teachers-content .card:last-child {
+    position: relative;
+}
+.teachers .teachers-content .card:last-child::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: calc( 100% + 3em);
+    background: linear-gradient(90.72deg, #FFFFFF 40.8%, #FFFFFF 70.63%, rgba(255, 255, 255, 0) 99.43%);
+    left: 0;
+    z-index: 2;
+    bottom: 0;
+}
+@media(max-width: 1246px) and (min-width: 881px) {
+    .teachers .container {
+        width: 60%;
+    }
+}
+@media (max-width: 881px) {
+    .teachers .container {
+        width: 100%;
+    }
+    .teachers .special {
+        width: 100% !important;
+        padding-inline: 1.22em;
+        
+    }
+    .teachers .special .card:first-child,
+    .teachers .special .card:nth-child(2){
+        width: calc(100% / 2);
+        
+    }
+    .teachers .special .card:last-child {
+        width: calc(100% / 4.8);
+    }
+}
+@media(max-width: 420px) {
+    .teachers .special .card:first-child,
+    .teachers .special .card:nth-child(2){
+        flex: 1;
+        
+    }
+    .teachers .special {
+        width: 100% !important;
+        padding-inline: 1.22em !important;
+        
+    } 
+    .teachers .special .card:last-child {
+        display: none;
+    }
+    .teachers .teachers-content .card:nth-child(2) {
+        position: relative;
+    }
+    .teachers .teachers-content .card:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: calc( 100% + 3em);
+        background: linear-gradient(90.72deg, #FFFFFF 40.8%, #FFFFFF 70.63%, rgba(255, 255, 255, 0) 99.43%);
+        
+        left: 0;
+        z-index: 2;
+        bottom: 0;
+    }
+}

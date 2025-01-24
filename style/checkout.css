@@ -1,0 +1,146 @@
+@import "./navbar.css";
+@import "./topbar.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./ads-banner.css";
+@import "./header-section.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+.check-out .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.check-out .container .header-text {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 3.5em;
+    margin-top: 2em;
+    color: var(--primary-color);
+}
+.check-out .container .header-text span {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    color: #F04A26;
+}
+.check-out .container .check-out-container {
+    display: flex;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap !important;
+}
+.check-out .container .check-out-container .content-image {
+    flex: 1;
+    height: 100%;
+}
+.check-out .container .check-out-container .content-text {
+    flex: 1;
+    padding: 5em 5em 0 0;
+}
+.check-out .container .check-out-container .content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.check-out .container .check-out-container .content-text .header{
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 2.9em;
+    color: var(--primary-color);
+    margin-bottom: 0.75em;
+}
+.check-out .container .check-out-container .content-text form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75em;
+    padding-right: 1.5em;
+    margin-bottom: 2em;
+}
+.check-out .container .check-out-container .content-text form .box label{
+    position: relative;
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400 ;
+    font-size: 1em;
+    color: #686868;
+}
+.check-out .container .check-out-container .content-text form .box input {
+    appearance: none;
+}
+.check-out .container .check-out-container .content-text form .box label::before {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 1px solid #818181;
+    background-color: transparent;
+    right: -2em;
+    transition: 0.3s;
+
+}
+.check-out .container .check-out-container .content-text form .box label::after {
+    content: "";
+    position: absolute;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    right: -1.8em;
+    top: 50%;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    
+}
+.check-out .container .check-out-container .content-text form .box input:checked + label::after {
+    opacity: 1;
+    
+}
+.check-out .container .check-out-container .content-text form .box input:checked + label::before {
+    border-color: var(--primary-color);
+}
+.check-out .container .check-out-container .content-text form .box input:checked + label {
+    color: var(--primary-color);
+}
+.check-out .container .check-out-container .content-text .price {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.check-out .container .check-out-container .content-text .price p{
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 1.68em;
+    font-weight: 400;
+    color: #818181;
+}
+.check-out .container .check-out-container .content-text .price span{
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 1.68em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.check-out .container .btn button{
+    background-color: #F04A26;
+    border-radius: 8.5em;
+    color: white;
+    padding-block: 0.7em;
+    margin: auto;
+    width: 100%;
+    border: 0;
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 2.25em;
+}
+@media(max-width: 767px) {
+    .check-out .container .check-out-container {
+        flex-direction: column;
+        
+    }
+    .check-out .container .check-out-container .content-image {
+        width: 100%;
+    }
+    .check-out .container .check-out-container .content-text {
+        width: 100%;
+    }
+}

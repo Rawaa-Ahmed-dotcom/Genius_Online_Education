@@ -1,0 +1,366 @@
+@import "./navbar.css";
+@import "./topbar.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./header-section.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+.subscribe {
+    margin-block: 4em;
+}
+.subscribe .container {
+    display: flex;
+    gap: 2em;
+
+}
+
+.subscribe .container .long-info {
+    flex: 3;
+}
+.subscribe .container .short-info {
+    flex: 1;
+    max-height: 48em;
+}
+.subscribe .container .long-info  .header-text {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--primary-color);
+}
+.subscribe .container .long-info  .header-text span {
+    color: #F04A26;
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.subscribe .container .long-info .form {
+    width: 100%;
+}
+.subscribe .container .long-info .form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.subscribe .container .long-info .form form .full-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.subscribe .container .long-info input:not(.fname),
+.long-info input:not(.lname),
+.long-info input:not(.phone),
+.long-info input:not(.radio) {
+    margin-bottom: 3em;
+}
+.subscribe .container .long-info .form form .full-name input {
+    flex: 1;
+    
+
+}
+
+.subscribe .container .long-info .form form input::placeholder {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1.4em;
+    color: #BFBFBF;
+}
+.subscribe .container .long-info .form form .mobile {
+    display: flex;
+    margin-bottom: 3em;
+    height: 3.5em;
+}
+.subscribe .container .long-info .form form .mobile span {
+    flex: 1;
+    font-weight: 700;
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 1.125em;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #686868;
+    border: 1px solid #8A8A8A;
+    border-left : 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.subscribe .container .long-info .form form input:not(.radio) {
+    transition: 0.3s;
+}
+.subscribe .container .long-info .form form input:not(.radio):focus {
+    box-shadow: 0px 0px 5px #BFBFBF;
+    outline: 0;
+}
+.subscribe .container .long-info .form form .mobile input {
+    flex: 5;
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    
+}
+.subscribe .container .long-info .form form > label {
+font-family: "Alexandria";
+font-weight: 700;
+font-size: 1.875em;
+color: var(--primary-color);
+margin-bottom: 1em;
+}
+.subscribe .container .long-info .form form  > label span {
+color: #F04A26;
+font-family: "Alexandria";
+font-weight: 700;
+margin-bottom: 2em;
+}
+.subscribe .container .long-info input:not(.radio) {
+    padding-inline: 1em;
+    padding-block: 0.7em;
+    border-radius: 6px;
+    border: 1px solid #8A8A8A;
+    width: 100%;
+    height: 3.5em;
+    
+} 
+.subscribe .container .long-info .form form .radio-button {
+    display: flex;
+    
+}
+.subscribe .container .long-info .form form .radio-button input {
+    appearance: none;
+   
+}
+
+.subscribe .container .long-info .form form .radio-button label {
+    position: relative;
+    padding-right:  3em;
+    font-family: "Alexandria";
+    font-weight: 400;
+    font-size: 1.25em;
+    color: #616161;
+}
+.subscribe .container .long-info .form form .radio-button label::before {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #818181;
+    border-radius: 50%;
+    right: 0.8em;
+}
+.subscribe .container .long-info .form form .radio-button label::after {
+    content: "";
+    position: absolute;
+    width: 0.7em;
+    height: 0.7em;
+    background-color: #818181;
+    border-radius: 50%;
+    right: 0.95em;
+    top: 22%;
+    opacity: 0;
+    
+    transform: translatey(-50%);
+    transition: 0.3s;
+} 
+.subscribe .container .long-info .form form .radio-button  input:checked + label::after {
+    opacity: 1;
+    
+}
+.subscribe .container .long-info .box {
+    width: 100%;
+    height:  52em;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    margin-top: 2em;
+}
+.subscribe .container .short-info .header-text {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+.subscribe .container .short-info .header-text span {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #F04A26;
+}
+.subscribe .container .short-info {
+    
+    
+    padding-block: 1.875em;
+    padding-inline: 1.4375em;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+}
+.subscribe .container .short-info .info-box {
+    margin-top: 1.125em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1em;
+    justify-content: center;
+    background-color: #F5F5F5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 1.5em;
+    
+}
+.subscribe .container .short-info .info-box .image  {
+    width: 100%;
+
+}
+.subscribe .container .short-info .info-box .image img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.subscribe .container .short-info .info-box .text {
+    margin-top: 1.5em;
+}
+.subscribe .container .short-info .info-box .text h2 {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 0.7em;
+}
+.subscribe .container .short-info .info-box .text span {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1em;
+    color: #686868;
+}
+.subscribe .container .short-info .info-box .text p {
+    margin-top: 0.5em;
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1em;
+    color: #686868;
+}
+.subscribe .container .short-info .code {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    width: 100%;
+    
+    height: 2.5em;
+    gap: 0;
+    
+    margin-bottom: 2.3em;
+    
+
+}
+.subscribe .container .short-info .code input {
+    flex: 3;
+    height: 100%;
+    border: 1px solid #BFBFBF;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-inline: 0.7em;
+    /*padding-block: 1em; */
+    transition: 0.3s;
+    
+    
+}
+.subscribe .container .short-info .code input:focus {
+    box-shadow: 0 0 5px #BFBFBF;
+    outline: 0;
+}
+.subscribe .container .short-info .code input ::placeholder {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 0.5em;
+    color: #686868;
+}
+.subscribe .container .short-info .code button {
+    flex: 1;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    outline: 0;
+    border: 0;
+    padding-inline: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #F04A26;
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 0.75em;
+}
+.subscribe .container .short-info .price {
+padding-top: 1.7em;
+position: relative;
+margin-bottom: 2em;
+}
+.subscribe .container .short-info .price::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 2.875em); 
+    height: 1px ;
+    background-color: #686868;
+    left: -1.4375em ;
+    top: 0;
+}
+.subscribe .container .short-info .price p {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1em;
+    color: #686868;
+    margin-bottom: 1.25em;
+}
+.subscribe .container .short-info .price .item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.subscribe .container .short-info .price .item span {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 600;
+    font-size: 1.1em;
+    color: var(--primary-color);
+}
+.subscribe .container .short-info .price .item span:last-of-type {
+    font-weight: 700;
+    font-size: 1em;
+}
+.subscribe .container .short-info a{
+    width: 100%;
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 4em;
+    display: block;
+    padding-block: 0.6em;
+    text-align: center;
+    color: white;
+    background-color: #F04A26;
+}
+@media(max-width: 767px) {
+    .subscribe .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe .container .long-info {
+        width: 100%;
+    }
+    .subscribe .container .short-info {
+        width: 100%;
+        min-height: 53em;
+    }
+    
+}
+

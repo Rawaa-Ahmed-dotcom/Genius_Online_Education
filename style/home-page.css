@@ -1,0 +1,441 @@
+@import "./navbar.css";
+@import "./topbar.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./ads-banner.css";
+@import "./header-section.css";
+@import "./hero-banner.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    font-family: "Arabic-ui";
+}
+
+/* Start Goals-section */
+.goals {
+    margin-block: 4em;
+}
+.goals  .goals-content {
+display: flex;
+gap: 1.5em;
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 3.5em;
+}
+.goals  .goals-content .goals-items {
+    width: 33em; 
+}
+.goals  .goals-content .goals-items .item {
+    border-radius: 10px;
+    margin-bottom: 1.3em;
+}
+
+.goals  .goals-content .goals-items .item .item-header {
+height: 4.125em;
+display: flex;
+align-items: center;
+gap: 0.875em;
+border-radius: 10px;
+}
+.goals  .goals-content .goals-items .item .item-header .item-header-icon {
+margin-right: 1.18em;
+}
+.goals  .goals-content .goals-items .item .item-header .item-header-title {
+    font-size: 1.56em;
+    font-weight: 700;
+    font-family: "IBM Plex Sans Arabic", serif;
+    
+    
+}
+.goals  .goals-content .goals-items .active {
+    background-color: #F4A90540;
+}
+.goals  .goals-content .goals-items .active .item-header {
+    background-color: var(--yellow-color);
+}
+.goals  .goals-content .goals-items .active .item-header .item-header-title {
+    color: var(--white-color);
+} 
+
+.goals  .goals-content .goals-items .active .item-content {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding-top: 1.68em;
+    color: var(--primary-color);
+    padding-right: 2em;
+    padding-bottom: 1.5em;
+    font-family: "IBM Plex Sans Arabic", serif;
+    width: 25em;
+    
+}
+.goals  .goals-content .goals-items :not(.active) .item-content {
+    display: none;
+}
+.goals  .goals-content .goals-items :not(.active) .item-header {
+    background-color: #F5F5F5;
+    color: var(--primary-color);
+}
+.goals .container .goals-content .images {
+    background-color: var(--yellow-color);
+    border-radius: 1.56em;
+    flex: 1;
+    position: relative;
+}
+.goals .container .goals-content .images img:last-child {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.goals .container .goals-content .images img:first-child {
+    position: absolute;
+    width: 8.125em;
+    height: 5.5em;
+    left: 2.875em;
+    top: -1.68em;
+    animation: up-down 2s alternate infinite;
+}
+.goals .container .goals-content .images img:nth-child(2)  {
+    position: absolute;
+    width: 5.125em;
+    height: 3.5em;
+    right: 3.5em;
+    top: 1.43em;
+    animation: up-down 2s  1.5s alternate infinite;
+    
+
+}
+.goals .container .goals-content .images img:nth-child(3) {
+    position: absolute;
+    width: 4.25em;
+    height: 2.875em;
+    left: 2.625em;
+    bottom: 1.8125em;
+    animation: up-down 2s 2s alternate infinite;
+    
+} 
+.goals .container .goals-content .images img:nth-child(4) {
+    position: absolute;
+    width: 6.5em;
+    height: 4.375em;
+    right: 2.875em;
+    bottom: -1.3125em;
+    animation: up-down 2s  2.5s alternate infinite;
+}   
+@keyframes up-down {
+    0%,100% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(1em);
+    }
+}
+@media(max-width: 767px) {
+    .goals .container .goals-content  {
+        flex-direction: column;
+    }
+    .goals .container .goals-content .images {
+        width: 100%;
+        order: -1;
+        margin-bottom: 1em;
+    }
+    .goals .container .goals-content .goals-items {
+        width: 100%;
+        
+    }
+}
+.goals .container .goals-stats {
+    display: flex;
+    width: 100%;
+    height: 10em;
+    border-radius: 10px;
+    margin-top: 3.5em;
+}
+.goals .container .goals-stats > div {
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+}
+.goals .container .goals-stats > div h1 {
+    font-weight: 700;
+    font-size: 4.06em;
+    padding: 0;
+    margin: 0;
+    font-family: "IBM Plex Sans Arabic", serif;
+
+}
+.goals .container .goals-stats > div p {
+font-weight: 300;
+font-size: 1.4375em;
+margin-top: 0;
+color: white;
+padding: 0;
+font-family: "IBM Plex Sans Arabic", serif;
+}
+.goals .container .goals-stats .blue {
+flex: 1;
+background-color: #286CD5;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.goals .container .goals-stats .yellow {
+flex: 1;
+background-color: var(--yellow-color);
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.goals .container .goals-stats .red {
+flex: 2;
+background-color: var(--orange-color);
+}
+@media (max-width:767px) {
+    .goals .container .goals-stats {
+        flex-direction: column;
+
+    }
+    .goals .container .goals-stats > div {
+        width: 100%;
+        padding-bottom: 0.5em;
+    }
+    .goals .container .goals-stats .blue {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    }
+    .goals .container .goals-stats .yellow {
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+/* End Goals-section */
+/* Start Rounds-section*/
+.rounds {
+margin-bottom: 6.125em;
+}
+
+.rounds .container .header-section {
+align-items: center;
+}
+.rounds .container .header-section-text h2 span {
+    color: #286CD5;
+}
+.rounds .container .header-section-description {
+width: 25em;
+font-family: "IBM Plex Sans Arabic";
+font-weight: 400;
+font-size: 1.125em;
+color: #686868;
+}
+
+.rounds .container .cards {
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+gap: 1.25em;
+margin-top: 3.375em;
+}
+.rounds .container .cards .card {
+background-color: #F5F5F5;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+margin-bottom: 2.5em;
+}
+
+.rounds .container .cards .card .card-image img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.rounds .container .cards .card .card-text {
+margin-right: 1.4375em;
+margin-top: 1.8125em;
+width: 16em;
+}
+.rounds .container .cards .card .card-text h3 {
+font-family: "IBM Plex Sans Arabic";
+font-weight: 700;
+font-size: 1.6em;
+color: var(--primary-color);
+line-height: 1.4em;
+}
+.rounds .container .cards .card .card-text p{
+color:var(--gray-color-card-text);
+font-family: "IBM Plex Sans Arabic";
+font-size: 1em;
+margin-top: 0.75em;
+margin-bottom: 3.18em;
+width: 12.8em;
+
+}
+.rounds .container .cards .red .card-text h3 {
+    color: var(--orange-color);
+}
+.rounds .container .cards .blue  .card-text h3 {
+    color: var(--blue-color);
+}
+.rounds .container .cards .yellow  .card-text h3 {
+    color: var(--yellow-color);
+}
+@media(max-width:767px) {
+    .rounds {
+        margin-top: 17em;
+    }
+    .rounds .container .header-section {
+        align-items: flex-start;
+    }
+}
+.rounds .container .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.rounds .container .button button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: "IBM Plex Sans Arabic";
+    width: 10.875em;
+    height: 3.125em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1875em;
+    font-weight: 700;
+    background-color: var(--orange-color);
+    border-radius: 5px;
+}
+/* End Rounds-section*/
+/* Start testimoials */
+.testi {
+margin-bottom: 3.75em;
+}
+.testi .container .header-section {
+    margin-bottom: 2.5em;
+}
+.testi .container .header-section .header-section-text h2 span{
+    color: var(--orange-color);
+}
+.testi .container .header-section .header-section-text p {
+    margin-top: 0.5em;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-family: "IBM Plex Sans Arabic";
+    color: #282828;
+    width: 20em;
+}
+.testi .container .header-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(21.875em,1fr));
+    gap: 1.3125em;
+}
+.testi .container .header-content .card  {
+    padding: 3em 1.75em 4em 1.8em;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+.testi .container .header-content .card .text {
+    width: 18em;
+    font-family: "IBM Plex Sans Arabic";
+    color: var(--gray-color-card-text);
+}
+.testi .container .header-content .card .text p {
+font-weight: 400;
+font-size: 1.125em;
+margin-bottom: 0.75em;
+}
+.testi .container .header-content .card .text h4 {
+font-weight: 600;
+font-size: 1.125em;
+margin-bottom: 0.43em;
+}
+.testi .container .header-content .card .text span {
+font-size: 0.875em;
+
+}
+@media (max-width:767px) {
+    .testi .container .header-section .header-section-text {
+        order: -1;
+    }
+}
+/* End testimoials */
+/* Start teachers */
+.home-page-teachers {
+margin-bottom: 8.43em;
+}
+.home-page-teachers  .home-page-teachers-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(19em,1fr));
+    
+    gap: 1.5em;
+    margin-top: 3.5em;
+    
+}
+
+.home-page-teachers  .home-page-teachers-content .card {
+background-color: var(--secondary-color);
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.home-page-teachers  .home-page-teachers-content .card .card-image {
+background-color: #12376B40;
+
+display: flex;
+justify-content: center;
+height: 13em;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+.home-page-teachers  .home-page-teachers-content .card .card-image img {
+    width: 100%;
+    height: 14.5em; 
+    object-fit: contain;
+    transform: translatey(-1.5em);
+}
+.home-page-teachers  .home-page-teachers-content .card .card-text {
+margin: 1.8em 1.43em 1.68em 1.625em;
+
+
+}
+.home-page-teachers  .home-page-teachers-content .card .card-text h2 {
+font-weight: 700;
+font-family: "IBM Plex Sans Arabic";
+font-size: 1.6em;
+color: var(--primary-color);
+margin-bottom: 0.4em;
+}
+.home-page-teachers  .home-page-teachers-content .card .card-text p {
+    font-family: "IBM Plex Sans Arabic";
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--gray-color-card-text);
+}
+.home-page-teachers  .home-page-teachers-content .card:nth-child(2) .card-image {
+    background-color: #F04B2540;
+}
+
+.home-page-teachers  .home-page-teachers-content .card:nth-child(2) .card-text h2 {
+    color: var(--orange-color);
+
+}
+.home-page-teachers  .home-page-teachers-content .card:nth-child(3) .card-image {
+    background-color: #286CD540;
+}
+.home-page-teachers  .home-page-teachers-content .card:nth-child(3) .card-text h2 {
+    color: var(--blue-color);
+}
+.home-page-teachers  .home-page-teachers-content .card:nth-child(4) .card-image {
+    background-color: #F4A90540;
+}
+.home-page-teachers  .home-page-teachers-content .card:nth-child(4) .card-text h2 {
+    color: var(--yellow-color);
+}
+/* End teachers */
+
