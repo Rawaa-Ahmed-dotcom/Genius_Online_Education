@@ -314,7 +314,7 @@ font-size: 3.5em;
 .course-info .course-info-container .course-long-info .header-section {
     margin-top: 2em;
     display: block;
-    width: 32em;
+/*     width: 32em; */
 }
 .course-info .course-info-container .course-long-info .header-section p {
     color: #909090;
