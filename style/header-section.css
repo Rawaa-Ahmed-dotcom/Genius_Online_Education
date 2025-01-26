@@ -6,7 +6,7 @@
         font-family: "IBM Plex Sans Arabic";
 }
 .header-section-text {
-        width: 32em;
+/*         width: 32em; */
 }
 .header-section .header-section-text h4 {
         position: relative;
