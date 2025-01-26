@@ -226,7 +226,7 @@ align-items: center;
     color: #286CD5;
 }
 .rounds .container .header-section-description {
-width: 25em;
+/* width: 25em; */
 font-family: "IBM Plex Sans Arabic";
 font-weight: 400;
 font-size: 1.125em;
